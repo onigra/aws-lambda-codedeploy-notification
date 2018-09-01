@@ -26,7 +26,7 @@ exports.handler = (event, context) => {
 
   const request = https.request(options, (response) => {
     response.setEncoding("utf8");
-    response.on("data", (chunk) => {
+    response.on("data", () => {
       context.done(null);
     });
   });
