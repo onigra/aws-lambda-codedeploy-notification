@@ -1,0 +1,7 @@
+{
+  "lambda": {
+    "role": "aws-lambda-codedeploy-notification-executor",
+    "name": "aws-lambda-codedeploy-notification",
+    "region": "ap-northeast-1"
+  }
+}
