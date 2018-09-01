@@ -28,7 +28,7 @@ const dangerMessages = [
   "Your quota allows for 0 more running instance"
 ];
 
-exports.severity = message => {
+exports.severity = (message) => {
   if (dangerMessages.includes(message)) {
     return "danger";
   }

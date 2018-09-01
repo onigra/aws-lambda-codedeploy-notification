@@ -13,7 +13,7 @@ describe.each([
   ["Pending Initialization"],
   ["Removed instance "],
   ["Rollback of environment"]
-])("return warning", message => {
+])("return warning", (message) => {
   test(`${message}`, () => {
     assert.equal(severity(message), "warning");
   });
@@ -33,7 +33,7 @@ describe.each([
   ["Unsuccessful command execution"],
   ["You do not have permission"],
   ["Your quota allows for 0 more running instance"]
-])("return danger", message => {
+])("return danger", (message) => {
   test(`${message}`, () => {
     assert.equal(severity(message), "danger");
   });
@@ -45,8 +45,9 @@ describe.each([
   ["foobarbaz"],
   ["good"],
   ["bad"],
+  ["umm"],
   ["jugemjugemgokounosurikire"]
-])("return good", message => {
+])("return good", (message) => {
   test(`${message}`, () => {
     assert.equal(severity(message), "good");
   });

@@ -24,14 +24,14 @@ exports.handler = (event, context) => {
     path: process.env.WEBHOOK_PATH
   };
 
-  const request = https.request(options, response => {
+  const request = https.request(options, (response) => {
     response.setEncoding("utf8");
-    response.on("data", chunk => {
+    response.on("data", (chunk) => {
       context.done(null);
     });
   });
 
-  request.on("error", e => {
+  request.on("error", (e) => {
     console.log("problem with request: " + e.message);
   });
 

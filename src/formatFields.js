@@ -83,7 +83,7 @@ function fields(message) {
   }
 }
 
-exports.formatFields = rawMessage => {
+exports.formatFields = (rawMessage) => {
   const message = JSON.parse(rawMessage);
 
   if (message) {

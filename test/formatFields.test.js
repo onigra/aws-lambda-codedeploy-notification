@@ -40,8 +40,7 @@ describe("Deployment Event", () => {
       deploymentGroupName: "deployment-group",
       createTime: "Fri Aug 31 04:03:48 UTC 2018",
       completeTime: "Fri Aug 31 04:07:45 UTC 2018",
-      deploymentOverview:
-        '{"Succeeded":2,"Failed":0,"Skipped":0,"InProgress":0,"Pending":0}',
+      deploymentOverview: '{"Succeeded":2,"Failed":0,"Skipped":0,"InProgress":0,"Pending":0}',
       status: "SUCCEEDED"
     });
 
